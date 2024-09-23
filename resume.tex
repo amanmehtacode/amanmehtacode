@@ -1,0 +1,262 @@
+%-------------------------
+% Resume in Latex
+% Author : Aman Mehta
+% Github: https://github.com/amanmehtacode
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{qrcode}
+\usepackage{tikz}
+\usepackage{graphicx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%RESUME STARTS HERE%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{tikzpicture}[remember picture, overlay]
+\node[anchor=north west, xshift=0.25cm, yshift=-0.25cm] at (current page.north west) {\qrcode[height=.7in]{https://github.com/amanmehtacode/}};
+\end{tikzpicture}
+
+\begin{tikzpicture}[remember picture, overlay]
+\node[anchor=north east, xshift=-0.25cm, yshift=-0.25cm] at (current page.north east) {\qrcode[height= .7 in ]{https://www.linkedin.com/in/amanmehtacode/}};
+\end{tikzpicture}
+
+
+\begin{center}
+\vspace*{-0.25cm} % Adjust the negative value to move the name upwards
+
+\textbf{\Huge \scshape Aman Mehta} \\ \vspace{0pt}
+\href{tel:+16466178574}{\underline{+1-(646)-617-8574}} $|$ \href{mailto:amehta20@nyit.edu}{\underline{amehta20@nyit.edu}} $|$ 
+\href{https://www.linkedin.com/in/amanmehtacode/}{\underline{linkedin.com/in/amanmehtacode}} $|$ 
+\href{https://github.com/amanmehtacode}{\underline{github.com/amanmehtacode}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{New York Institute of Technology}{New York, NY}
+{Bachelor of Science in Computer Science}{Expected May 2026}
+\resumeSubHeadingListEnd
+
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{\textbf{Relevant Coursework:}  Data Structures, Digital Logic, Computer Architecture, Calculus, Linear Algebra, Statistics}
+}\end{itemize}
+
+%\begin{itemize}[leftmargin=0.15in, label={}]
+%\small{\item{\textbf{Technical Skills:} Java, SQL, Python, HTML, CSS, JavaScript, React, Matplotlib, Node.js, Pandas}
+
+%\textbf{Developer Tools}{: VS Code, Power BI, Microsoft 365, Phyphox, Excel, PowerBI, MySQL Workbench, Tableau} \\
+%}\end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Technical Projects}
+\resumeSubHeadingListStart
+
+% -----------Multiple Positions Heading-----------
+%\resumeSubSubheading
+%{Software Engineer I}{Oct 2014 - Sep 2016}
+%\resumeItemListStart
+%\resumeItem{Apache Beam}
+%{Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%\resumeItemListEnd
+%\resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+
+
+
+\resumeSubheading
+{Ubuntu Portfolio}{\href{https://github.com/amanmehtacode/amanmehtacode.github.io}{GitHub Repo} | \href{https://www.amanmehta.me/}{Portfolio Link}}
+{Technologies:}{Node.js . HTML . Tailwind CSS . GitHub Workflows . Vercel}
+\resumeItemListStart
+\resumeItem{Developed a personal portfolio website replicating the Ubuntu interface, hosted on GitHub and Vercel.}
+\resumeItem{Set up GitHub Actions workflows for continuous integration and deployment (CI/CD) on Vercel.}
+\resumeItem{Reduced deployment time by 30\% through automated testing and build optimizations.
+}
+\resumeItemListEnd
+
+\resumeSubheading
+{GitNoob (Git Commands Library)}{\href{https://github.com/amanmehtacode/GitNoob}{GitHub Repo}}
+{Technologies:}{Go . Bash . AI (LLM) . Git}
+\resumeItemListStart
+\resumeItem{Created a CLI tools library simplifying Git commands for new developers, helping reduce onboarding time by 40\%}
+\resumeItem{Introduced ‘-l’ learning mode to teach users the underlying Git processes, improving understanding by 50\%.}
+\resumeItem{Developed ‘smartPush’ feature to generate meaningful commit messages using LLMs, increasing efficiency by 25\%.}
+\resumeItemListEnd
+
+\resumeSubheading
+{CopyPasta (ClientSide/Static Website Downloader)}{\href{https://github.com/amanmehtacode/CopyPasta}{GitHub Repo}}
+{Technologies:}{Go . Bash . wget}
+\resumeItemListStart
+\resumeItem{Built a tool to efficiently download websites for offline access, automating client-side scraping via ‘wget.’}
+\resumeItem{Simplified the process for capturing and preserving static web content, cutting manual effort by 60\%.}
+\resumeItem{Enhanced efficiency of large-scale downloads with error-handling scripts, improving completion rates by 20\%.}
+\resumeItemListEnd
+
+\resumeSubheading
+{LeetCode CLI Interface}{\href{https://github.com/amanmehtacode/LeetcodeCLI}{GitHub Repo} (Ongoing Development)}
+{Technologies:}{Python . Go . APIs . AI (LLM)}
+\resumeItemListStart
+\resumeItem{Developing a command-line interface allowing users to solve LeetCode problems within a terminal environment.}
+\resumeItem{Integrating AI to provide real-time feedback on code performance, simulating a coding interview experience.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Predictive Analysis of Housing Prices}{(ongoing development)}
+{Technologies:}{Python . TensorFlow . }
+\resumeItemListStart
+\resumeItem{Building a predictive model for housing prices using market trends to accurately forecast housing price changes.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Rose Open Source Education (ROSE)}{(ongoing development)}
+{Technologies:}{Angular.js . Tailwind CSS . Firebase . TypeScript}
+\resumeItemListStart
+\resumeItem{Developing a platform aimed at providing accessible educational resources, inspired by neetcode.io and OSSU.}
+\resumeItem{Creating interactive learning experiences with an inbuilt coding sandbox using Judge0.}
+\resumeItemListEnd
+
+%-----------EXPERIENCE-----------
+
+\resumeSubHeadingListEnd
+
+
+\section{Experience}
+
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{SLR Technologies}{Remote}
+{Front-end Intern}{June 2021 - July 2022}
+\resumeItemListStart
+\resumeItem{Collaborated with the development team to implement front-end in C\#, improving user interface and experience.}
+\resumeItemListEnd
+
+\resumeSubheading
+{SLR Technologies}{Chandigarh, India}
+{Assistant Coding Tutor}{June 2020 - May 2021}
+\resumeItemListStart
+\resumeItem{Assisted in teaching Python programming to high school students.}
+\resumeItem{Developed and delivered educational materials and coding exercises to enhance student engagement.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+{\item{
+\textbf{Languages}{: Python, Git, Java, Go, C\#, SQL, NoSQL, HTML, CSS, JavaScript, Bash, zsh, Node.js}}}\vspace{-5pt}
+{\item{
+\textbf{Tools}{: Linux (Arch/Debian), Docker, TensorFlow, PyTorch, HuggingFace, Neovide, VSCode, Firebase, Vercel}}}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
